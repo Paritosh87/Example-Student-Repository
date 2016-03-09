@@ -29,6 +29,7 @@ Beginner
   ```
    echo "I should wait to buy socks until next Fall." > socks.txt
    cat socks.txt > buy.txt
+   cat buy.txt
   ```
 8.
   ```
