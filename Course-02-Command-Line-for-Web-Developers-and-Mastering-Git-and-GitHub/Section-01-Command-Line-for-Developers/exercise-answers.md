@@ -125,7 +125,7 @@ per.com \n' > sites.txt
   ```
 8.
   ```
-  grep ".js" study.html > javascripts.html
+  grep "\.js" study.html > javascripts.html
   ```
 9.
   ```
