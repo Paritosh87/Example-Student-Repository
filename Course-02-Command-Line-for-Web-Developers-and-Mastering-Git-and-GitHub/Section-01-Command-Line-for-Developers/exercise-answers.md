@@ -168,46 +168,47 @@ Intermediate
 Advanced
 ---
 1.
-    ```
-    #!/usr/bin/env bash
-    echo "The path of tar file is " $1
-    echo "The path to extract tar file is " $2
-    
-    mkdir -p $2
-    
-    echo "Expanding path " $1 " into " $2
-    echo "------------------------------"
-    tar -xzvf $1 -C $2
-    echo "------------------------------"
-    echo "done"
-    ```
-    
+     ```
+     #!/usr/bin/env bash
+     echo "The path of tar file is " $1
+     echo "The path to extract tar file is " $2
+     
+     mkdir -p $2
+     
+     echo "Expanding path " $1 " into " $2
+     echo "------------------------------"
+     tar -xzvf $1 -C $2
+     echo "------------------------------"
+     echo "done"
+     ```
+     
 2.
-    ```
-    #!/usr/bin/env bash
-    echo "Template will be created in folder: " $1
-    echo "Title: "$2
-    
-    mkdir -p $1/css $1/images $1/js
-    
-    echo -e "<style> \r\n body{color:red;} \r\n</style>" >  $1/css/Style.css
-    
-    echo -e "<!DOCTYPE html> \r\n <html>\r\n<head>\r\n <h1><title>$2</title></h1>\r\n</head>\r\n<body>\r\n</body>\r\n</html>" > $1/index.html
+     ```
+     #!/usr/bin/env bash
+     echo "Template will be created in folder: " $1
+     echo "Title: "$2
+     
+     mkdir -p $1/css $1/images $1/js
+     
+     echo -e "<style> \r\n body{color:red;} \r\n</style>" >  $1/css/Style.css
+     
+     echo -e "<!DOCTYPE html> \r\n <html>\r\n<head>\r\n <h1><title>$2</title></h1>\r\n</head>\r\n<body>\r\n</body>\r\n</html>" > $1/index.html
 
-    touch $1/js/main.js
+     touch $1/js/main.js
 
-    echo "done"
-    ```
-    
+     echo "done"
+     ```
+     
 3.
-    ```
-    #!/usr/bin/env bash
+     ```
+     #!/usr/bin/env bash
 
-    echo "New file created: "$1
-    echo "File pattern to match: "$2
+     echo "New file created: "$1
+     echo "File pattern to match: "$2
 
-    cat $2 > $1
+     cat $2 > $1
 
-    echo "done"
-    ```
+     echo "done"
+     ```
+    
     
